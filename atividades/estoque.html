@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+   <script>
+   let saldoInicial = parseFloat(prompt("Informe o saldo inicial da peça:"));
+let continuar = 's';
+
+while (continuar.toLowerCase() === 's') {
+    let tipoEntrada = parseInt(prompt("Digite o tipo de entrada (1 para compra, 2 para venda):"));
+    let quantidade = parseInt(prompt("Digite a quantidade de peças:"));
+
+    if (tipoEntrada == 1) {
+        saldoInicial += quantidade;
+    } else if (tipoEntrada == 2) {
+        if (quantidade <= saldoInicial) {
+            saldoInicial -= quantidade;
+        } else {
+            quantidade >= saldoInicial
+            window.alert("Saldo insuficiente");
+        }
+    }
+
+    alert(`Saldo atualizado: ${saldoInicial}`);
+
+    continuar = prompt("Deseja continuar (s/n)?");
+}
+
+window.alert("Sistema encerrado");
+
+
+   </script>
+</body>
+</html>

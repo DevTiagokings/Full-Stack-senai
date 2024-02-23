@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas Condicionais</title>
+</head>
+<body>
+    <script>
+        nota1 = parseFloat(prompt("Informar nota1"))
+        nota2 = parseFloat(prompt("informar nota2"))
+        nota3 = parseFloat(prompt("informar nota3"))
+        media = (nota1 + nota2 + nota3)/3
+            document.write("média:" + media + "<br>")
+        if(media >=6)
+            document.write("Situação:Aprovado")
+        if(media >= 3 && media < 6)
+            document.write("Situação: Exame")
+        if(media < 3)
+            document.write("Situação: Reprovado")
+
+
+    </script>
+</body>
+</html>
